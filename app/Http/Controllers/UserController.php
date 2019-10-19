@@ -10,6 +10,8 @@ class UserController extends Controller
 	public function destroy($id,Request $request){
 		$user = User::findOrFail($id);
 		$user->delete();
+
+		redirect()->route('user.list');
 	}
 
 	public function list(){
