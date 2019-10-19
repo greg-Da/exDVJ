@@ -16,3 +16,5 @@
 Route::view('/', 'home');
 
 Route::get('userlist', 'UserController@list');
+
+Route::view('movies', 'movielist');

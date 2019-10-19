@@ -19,6 +19,7 @@ class CreateMoviesTable extends Migration
             $table->text('story');
             $table->string('actors');
             $table->float('rate');
+            $table->integer('year');
             $table->timestamps();
         });
     }
