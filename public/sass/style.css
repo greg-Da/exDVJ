@@ -1,0 +1,26 @@
+.image{
+	width: 100%;
+}
+
+.card-title, .card-text{
+	color: white;
+}
+
+.film-slider{
+	background: lightgrey;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.blue{
+	height: 25em;
+	background: #095A71;
+}
+
+.imgcoen{
+	background: lightgrey;
+}
+
+.presentation-circle{
+	border-radius: 50%;
+}
