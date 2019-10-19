@@ -1,8 +1,10 @@
+
+/*HOME*/
 .image{
 	width: 100%;
 }
 
-.card-title, .card-text{
+.movies-slider{
 	color: white;
 }
 
@@ -25,7 +27,8 @@
 	border-radius: 50%;
 }
 
+/*Movies list*/
 .hori-cards{
 	width: 100%;
-	
+
 }

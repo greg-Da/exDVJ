@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
 
-	public function delete(){
-		
+	public function destroy($id,Request $request){
+		$user = User::findOrFail($id);
+		$user->delete();
 	}
 
 	public function list(){

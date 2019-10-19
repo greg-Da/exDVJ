@@ -15,6 +15,8 @@
 
 Route::view('/', 'home');
 
-Route::get('userlist', 'UserController@list');
+Route::get('userlist', 'UserController@list')->name('user.list');
 
-Route::view('movies', 'movielist');
+Route::get('movies', 'MovieController@list');
+
+Route::delete('users/:id','UserController@destoy');

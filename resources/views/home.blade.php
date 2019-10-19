@@ -33,8 +33,8 @@
 									<img class="card-img-top" src="assets/seriousman.png"
 									alt="Card image cap">
 									<div class="card-body bg-dark">
-										<h4 class="card-title">Card title</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+										<h4 class="card-title movies-slider">Card title</h4>
+										<p class="card-text movies-slider">Some quick example text to build on the card title and make up the bulk of the
 										card's content.</p>
 									</div>
 								</div>
@@ -45,8 +45,8 @@
 									<img class="card-img-top" src="assets/hailcesar.png"
 									alt="Card image cap">
 									<div class="card-body bg-dark">
-										<h4 class="card-title">Card title</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+										<h4 class="card-title movies-slider">Card title</h4>
+										<p class="card-text movies-slider">Some quick example text to build on the card title and make up the bulk of the
 										card's content.</p>
 									</div>
 								</div>
@@ -57,8 +57,8 @@
 									<img class="card-img-top" src="assets/burn.png"
 									alt="Card image cap">
 									<div class="card-body bg-dark">
-										<h4 class="card-title">Card title</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+										<h4 class="card-title movies-slider">Card title</h4>
+										<p class="card-text movies-slider">Some quick example text to build on the card title and make up the bulk of the
 										card's content.</p>
 									</div>
 								</div>
@@ -77,8 +77,8 @@
 									<img class="card-img-top" src="assets/NCFOM.png"
 									alt="Card image cap">
 									<div class="card-body bg-dark">
-										<h4 class="card-title">Card title</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+										<h4 class="card-title movies-slider">Card title</h4>
+										<p class="card-text movies-slider">Some quick example text to build on the card title and make up the bulk of the
 										card's content.</p>
 									</div>
 								</div>
@@ -89,8 +89,8 @@
 									<img class="card-img-top" src="assets/IC.png"
 									alt="Card image cap">
 									<div class="card-body bg-dark">
-										<h4 class="card-title">Card title</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+										<h4 class="card-title movies-slider">Card title</h4>
+										<p class="card-text movies-slider">Some quick example text to build on the card title and make up the bulk of the
 										card's content.</p>
 									</div>
 								</div>
@@ -101,8 +101,8 @@
 									<img class="card-img-top" src="assets/barber.png"
 									alt="Card image cap">
 									<div class="card-body bg-dark">
-										<h4 class="card-title">Card title</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+										<h4 class="card-title movies-slider">Card title</h4>
+										<p class="card-text movies-slider">Some quick example text to build on the card title and make up the bulk of the
 										card's content.</p>
 									</div>
 								</div>
@@ -121,8 +121,8 @@
 									<img class="card-img-top" src="assets/LadyKiller.png"
 									alt="Card image cap">
 									<div class="card-body bg-dark">
-										<h4 class="card-title">Card title</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+										<h4 class="card-title movies-slider">Card title</h4>
+										<p class="card-text movies-slider">Some quick example text to build on the card title and make up the bulk of the
 										card's content.</p>
 									</div>
 								</div>
@@ -145,8 +145,8 @@
 									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
 									alt="Card image cap">
 									<div class="card-body bg-dark">
-										<h4 class="card-title">Card title</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+										<h4 class="card-title movies-slider">Card title</h4>
+										<p class="card-text movies-slider">Some quick example text to build on the card title and make up the bulk of the
 										card's content.</p>
 									</div>
 								</div>
