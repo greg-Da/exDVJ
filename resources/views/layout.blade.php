@@ -8,11 +8,11 @@
 </head>
 <body>
 	
-	@include('nav')
+	@include('component/nav')
 
 	@yield('content')
 
-	@include('footer')
+	@include('component/footer')
 
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.js"

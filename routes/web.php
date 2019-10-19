@@ -14,3 +14,5 @@
 
 
 Route::view('/', 'home');
+
+Route::get('userlist', 'UserController@list');
