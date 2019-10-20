@@ -1,3 +1,12 @@
+/*NAVBAR*/
+
+.searchbar{
+	border-radius: 20px 20px 20px 20px;
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0);
+	color: white;
+}
+
 
 /*HOME*/
 .image{
@@ -32,3 +41,4 @@
 	width: 100%;
 
 }
+
