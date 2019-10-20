@@ -19,7 +19,13 @@
       <th scope="row">1</th>
       <td>{{$user -> name}}</td>
       <td>{{$user -> email}}</td>
-      <td><a href="" class="btn btn-danger btn-sm" type="button" >Delete</a></td>
+      <td>
+        <form method="POST" action="{{Route('user.destroy',['id' => $user->id])}}">
+          @csrf
+          @method('DELETE')
+          <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+        </form>
+      </td>
     </tr>
     @endforeach
   </tbody>
