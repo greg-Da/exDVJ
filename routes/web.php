@@ -13,7 +13,7 @@
 
 
 
-Route::view('/', 'home');
+Route::get('/', 'ArticleController@rand')->name('home');
 
 Route::view('ethan', 'ethan');
 
@@ -23,4 +23,4 @@ Route::get('users/', 'UserController@list')->name('user.list');
 
 Route::delete('users/{id}/','UserController@destroy')->name('user.destroy');
 
-Route::get('movies', 'MovieController@list')->name('moves.list');
+Route::get('movies/', 'MovieController@list')->name('moves.list');

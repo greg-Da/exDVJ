@@ -28,6 +28,13 @@
 	background: #095A71;
 }
 
+.headerarticle{
+	text-align: center;
+	margin-top: 1em;
+	font-weight: bold;
+	color: white;
+}
+
 .imgcoen{
 	background: lightgrey;
 }
