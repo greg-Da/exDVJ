@@ -79,4 +79,18 @@
 
 .mov_head{
 	color: grey;
+	text-align: center;
+}
+
+.year{
+	color: blue;
+}
+
+.head{
+	text-decoration: underline;
+	color: grey;
+}
+
+.textmovie{
+	text-align: center;
 }

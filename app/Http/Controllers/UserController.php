@@ -17,14 +17,13 @@ class UserController extends Controller
 	}
 
 	public function add(Request $request){
-		dd($request->all());
 		$users = new User();
 		$users->username = $request['username'];
 		$users->email = $request['email'];
 		$users->password = bcrypt($request['password']);
 		$users->save();
 
-		return back();
+		return redirect()->route('user.list');
 	}    
 
 	public function show($user)
