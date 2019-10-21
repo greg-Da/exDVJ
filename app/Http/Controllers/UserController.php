@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\User;
+use Validator;
 
 class UserController extends Controller
 {
@@ -17,6 +18,17 @@ class UserController extends Controller
 	}
 
 	public function add(Request $request){
+
+		$validator = Validator::make($request->all(), [
+            'username' => 'required|unique:users|between:5,20',
+            'email' => 'required|unique:users|email',
+            'password' => 'required|max:100'
+        ]);
+ 
+        if ($validator->fails()) {
+            return back()->withErrors($validator)->withInput();
+        }
+
 		$users = new User();
 		$users->username = $request['username'];
 		$users->email = $request['email'];

@@ -25,7 +25,16 @@
 			<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
 			@csrf
 		</form>
-
+		@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+		<div></div>
 	</div>
 </div>
 <br><br><br><br><br><br><br>

@@ -4,7 +4,7 @@
       <a class="nav-link" href="/">Accueil</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="movies">Movies</a>
+      <a class="nav-link" href="{{Route('movie.list')}}">Movies</a>
     </li>
     <li class="nav-item" active>
 
