@@ -16,8 +16,8 @@
   <tbody>
   	@foreach ($users as $user)
     <tr>
-      <th scope="row">1</th>
-      <td>{{$user -> name}}</td>
+      <th scope="row">{{$user -> id}}</th>
+      <td>{{$user -> username}}</td>
       <td>{{$user -> email}}</td>
       <td>
         <form method="POST" action="{{Route('user.destroy',['id' => $user->id])}}">

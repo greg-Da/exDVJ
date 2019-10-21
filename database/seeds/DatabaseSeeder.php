@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
     	//USER
     	for ($i = 0; $i < 10; $i++) {
     		$user = new User;
-    		$user->name = $faker->userName;
+    		$user->username = $faker->userName;
     		$user->email = $faker->unique()->email;
     		$user->password = bcrypt('123456');
     		$user->save();

@@ -1,1 +1,7 @@
-<p>ethan</p>
+
+@extends('layout')
+
+@section('content')
+
+
+@endsection

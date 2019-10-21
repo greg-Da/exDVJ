@@ -9,11 +9,29 @@ class UserController extends Controller
 {
 	const VIEW = 'users.';
 
-	public function destroy($id,Request $request){
+	public function destroy($id){
 		$user = User::findOrFail($id);
 		$user->delete();
 
 		return redirect()->route('user.list');
+	}
+
+	public function add(Request $request){
+		dd($request->all());
+		$users = new User();
+		$users->username = $request['username'];
+		$users->email = $request['email'];
+		$users->password = bcrypt($request['password']);
+		$users->save();
+
+		return back();
+	}    
+
+	public function show($user)
+	{
+		$user = User::find($user);
+
+		return view('users.show',  ['user' => $user]);
 	}
 
 	public function list(){

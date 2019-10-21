@@ -7,6 +7,18 @@
 	color: white;
 }
 
+.navsign{
+	color: white;
+	padding-right: 1em;
+}
+
+/*FOOTER*/
+.footer{
+	background-color: lightgrey;
+	bottom: 0;
+	left: 0;
+	width: 100%
+}
 
 /*HOME*/
 .image{
@@ -53,3 +65,18 @@
 
 }
 
+/*SIGN UP*/
+
+.formsignup{
+	margin: auto;
+	background-color: lightgrey;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+/*MOVIES*/
+
+.mov_head{
+	color: grey;
+}
