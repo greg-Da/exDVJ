@@ -14,6 +14,7 @@
 
 
 Route::get('/', 'ArticleController@rand')->name('home');
+Route::get('/home', 'ArticleController@rand')->name('home');
 
 Route::view('signup', 'signup');
 
@@ -31,4 +32,7 @@ Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 
 Route::get('movies/{movie}/', 'MovieController@show');
 
+Route::get('users/profile', 'UserController@profile')->name('users.profile');;
+
 Route::get('users/{user}/', 'UserController@show')->name('users.show');
+Auth::routes();

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\User;
 use Validator;
+use Auth;
 
 class UserController extends Controller
 {
@@ -16,6 +17,12 @@ class UserController extends Controller
 
 		return redirect()->route('user.list');
 	}
+
+	public function profile()
+    {
+        $user = Auth::user();
+        return view('users.profile',compact('user',$user));
+    }
 
 	public function add(Request $request){
 
@@ -38,12 +45,7 @@ class UserController extends Controller
 		return redirect()->route('user.list');
 	}    
 
-	public function show($user)
-	{
-		$user = User::find($user);
 
-		return view('users.show',  ['user' => $user]);
-	}
 
 	public function list(){
 
