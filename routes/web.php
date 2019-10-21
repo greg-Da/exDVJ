@@ -15,8 +15,12 @@
 
 Route::view('/', 'home');
 
+Route::view('ethan', 'ethan');
+
+Route::view('joel', 'joel');
+
 Route::get('users/', 'UserController@list')->name('user.list');
 
-Route::get('movies', 'MovieController@list');
-
 Route::delete('users/{id}/','UserController@destroy')->name('user.destroy');
+
+Route::get('movies', 'MovieController@list')->name('moves.list');

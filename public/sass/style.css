@@ -36,6 +36,10 @@
 	border-radius: 50%;
 }
 
+.text{
+	color: black;
+}
+
 /*Movies list*/
 .hori-cards{
 	width: 100%;

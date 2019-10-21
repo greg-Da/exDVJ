@@ -11,6 +11,6 @@ class MovieController extends Controller
 
 		$movies = \App\Movie::all();
 
-		return view('movielist', ['movies' => $movies]);
+		return view('movie.list', ['movies' => $movies]);
 	}     
 }
