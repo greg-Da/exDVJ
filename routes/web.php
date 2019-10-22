@@ -13,7 +13,7 @@
 
 
 
-Route::get('/', 'ArticleController@rand')->name('home')->middleware('verified');
+Route::get('/', 'ArticleController@rand')->name('home');
 
 
 Route::view('signup', 'signup')->name('signup');
@@ -29,14 +29,15 @@ Route::delete('users/{id}/','UserController@destroy')->name('user.destroy');
 
 Route::get('movies/', 'MovieController@list')->name('movie.list');
 
-Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
-
 Route::get('movies/{movie}/', 'MovieController@show');
+
+Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 
 Route::get('users/profile', 'UserController@profile')->name('users.profile');
 
-Route::get('users/{user}/', 'UserController@show')->name('users.show');
-Auth::routes(['verify' => true]);
+Route::post('comments', ['as' => 'comments', 'uses' => 'CommentController@store'])->name('comments.store');
+
+Auth::routes();
 
 Route::get('/admin', 'AdminController@admin')    
     ->middleware('is_admin')    
