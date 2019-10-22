@@ -2,31 +2,37 @@
 @extends('layout')
 
 @section('content')
-<div class="textmovie">
-	<h1 class="head">{{$movie -> title}}</h1>
-<div class="row justify-content-center">
-
-            <div class="profile-header-container">
-                <div class="profile-header-img">
-                    <img class="rounded-circle" src="/public/assets/{{ $movie->avatar }}" />
-                    <!-- badge -->
-                    
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <br/>
+                    <h2>{{ $movie->title }}</h2>
+                    <p>
+                        {{ $movie->body }}
+                    </p>
+                    <hr />
+                    <h4>Display Comments</h4>
+  
+                    @include('component.commentsDisplay', ['comments' => $movie->comments, 'post_id' => $movie->id])
+   
+                    <hr />
+                    <h4>Add comment</h4>
+                    <form method="post" action="{{ route('comments.store'   ) }}">
+                        @csrf
+                        <div class="form-group">
+                            <textarea class="form-control" name="body"></textarea>
+                            <input type="hidden" name="post_id" value="{{ $movie->id }}" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" value="Add Comment" />
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
-        
-
-			<small class="year">{{$movie -> year}}</small>
-		</div>
-		<br>
-		<div class="col">
-			<h3 class="head">Actors</h3>
-			<p>{{$movie -> actors}}</p>
-		</div>
-	</div>
-		<h3 class="head">Synopsis</h3>
-		<p>{{$movie -> story}}</p>
+    </div>
 </div>
 
 @endsection

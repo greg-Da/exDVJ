@@ -32,7 +32,7 @@ Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 
 Route::get('movies/{movie}/', 'MovieController@show');
 
-Route::get('users/profile', 'UserController@profile')->name('users.profile');;
+Route::get('users/profile', 'UserController@profile')->name('users.profile');
 
 Route::get('users/{user}/', 'UserController@show')->name('users.show');
 Auth::routes(['verify' => true]);
