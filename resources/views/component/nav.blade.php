@@ -15,8 +15,8 @@
         </a>
 
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="ethan">Ethan</a>
-          <a class="dropdown-item" href="joel">Joel</a>
+          <a class="dropdown-item" href="{{Route('ethan')}}">Ethan</a>
+          <a class="dropdown-item" href="{{Route('joel')}}">Joel</a>
         </div>
       </div>
     </ul>
@@ -26,21 +26,21 @@
       <!-- Authentication Links -->
       @guest
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+        <a class="nav-link" href="{{ Route('login') }}">{{ __('Login') }}</a>
       </li>
       @if (Route::has('register'))
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+        <a class="nav-link" href="{{ Route('register') }}">{{ __('Register') }}</a>
       </li>
       @endif
       @else
       <li class="nav-item dropdown">
         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-          {{ Auth::user()->name }} <span class="caret"></span>
+          Profile <span class="caret"></span>
         </a>
 
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="user.profile">
+          <a class="dropdown-item" href="users/profile">
             User Profile
           </a>
           <a class="dropdown-item" href="{{ route('logout') }}"

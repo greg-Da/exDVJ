@@ -29,10 +29,11 @@
 		@endif
 	</div>
 
-		<p>{{$user->name}}</p>
+		<p>{{ Auth::user()->username }}</p>
 
 	
 </div>
+
 
 
 @endsection

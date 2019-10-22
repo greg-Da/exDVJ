@@ -15,7 +15,7 @@ class Movie extends Model
 
     public function comments()
     {
-        return $this->hasMany(Comment::class)->whereNull('parent_id');
+        return $this->hasMany(Comment::class,'post_id')->whereNull('parent_id');
     }
 
 

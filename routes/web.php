@@ -16,11 +16,12 @@
 Route::get('/', 'ArticleController@rand')->name('home')->middleware('verified');
 
 
-Route::view('signup', 'signup');
+Route::view('signup', 'signup')->name('signup');
+Route::view('signup', 'signup')->name('comments.store');
 
-Route::view('ethan', 'ethan');
+Route::view('ethan', 'ethan')->name('ethan');
 
-Route::view('joel', 'joel');
+Route::view('joel', 'joel')->name('joel');
 
 Route::get('users/', 'UserController@list')->name('user.list');
 

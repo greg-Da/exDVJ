@@ -21,6 +21,8 @@ class CreateCommentsTable extends Migration
             $table->text('body');
             $table->timestamps();
             $table->softDeletes();
+
+    //        $table->forein('post_id')->on('comments')->references('id');
         });
     }
 

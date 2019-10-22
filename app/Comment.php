@@ -35,6 +35,6 @@ class Comment extends Model
      */
     public function replies()
     {
-        return $this->hasMany(Comment::class, 'parent_id');
+        return $this->belongsTo(Comment::class, 'parent_id');
     }
 }
