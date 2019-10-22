@@ -15,9 +15,7 @@
 
 Route::get('/', 'ArticleController@rand')->name('home');
 
-
 Route::view('signup', 'signup')->name('signup');
-Route::view('signup', 'signup')->name('comments.store');
 
 Route::view('ethan', 'ethan')->name('ethan');
 
@@ -34,6 +32,8 @@ Route::get('movies/{movie}/', 'MovieController@show');
 Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 
 Route::get('users/profile', 'UserController@profile')->name('users.profile');
+
+Route::get('movies/{movie}', 'CommentController@show')->name('comments.show')->name('comments.show');
 
 Route::post('comments', ['as' => 'comments', 'uses' => 'CommentController@store'])->name('comments.store');
 
