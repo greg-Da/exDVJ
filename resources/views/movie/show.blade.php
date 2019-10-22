@@ -19,7 +19,7 @@
    
                     <hr />
                     <h4>Add comment</h4>
-                    <form method="POST" action="{{ route('comments.store') }}">
+                    <form method="POST" action="{{Route('comments.store')}}">
                         @csrf
                         <div class="form-group">
                             <textarea class="form-control" name="body"></textarea>

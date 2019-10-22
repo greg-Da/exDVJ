@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
 use App\Comment;
 
 class CommentController extends Controller
@@ -31,7 +30,7 @@ class CommentController extends Controller
     public function show(Request $request)
     {
         $comments = $request->input('movie');
-        return $comments;
+        return view('movie.show',['comments' => $comments]);
 
     }
 

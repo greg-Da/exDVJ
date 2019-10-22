@@ -33,8 +33,6 @@ Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 
 Route::get('users/profile', 'UserController@profile')->name('users.profile');
 
-Route::get('movies/{movie}', 'CommentController@show')->name('comments.show')->name('comments.show');
-
 Route::post('comments', ['as' => 'comments', 'uses' => 'CommentController@store'])->name('comments.store');
 
 Auth::routes();

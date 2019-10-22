@@ -19,6 +19,10 @@ class MovieController extends Controller
 	{
 		$movie = Movie::with('comments','comments.replies')->findOrFail($movie);
 
-		return view('movie.show',  ['movie' => $movie]);
+		$comments = $movie->comments();
+
+		return view('movie.show', [
+			'movie' => $movie,
+			'comments' => $comments
+		]);	}
 	}
-}
