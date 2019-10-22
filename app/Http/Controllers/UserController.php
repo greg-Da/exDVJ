@@ -40,6 +40,7 @@ class UserController extends Controller
 		$users->username = $request['username'];
 		$users->email = $request['email'];
 		$users->password = bcrypt($request['password']);
+		$users->type = User::DEFAULT_TYPE,
 		$users->save();
 
 		return redirect()->route('user.list');

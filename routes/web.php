@@ -36,3 +36,7 @@ Route::get('users/profile', 'UserController@profile')->name('users.profile');
 
 Route::get('users/{user}/', 'UserController@show')->name('users.show');
 Auth::routes(['verify' => true]);
+
+Route::get('/admin', 'AdminController@admin')    
+    ->middleware('is_admin')    
+    ->name('admin');
