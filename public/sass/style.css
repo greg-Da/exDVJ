@@ -78,14 +78,15 @@
 
 /*MOVIES*/
 
-.imgmovie{
-	max-height: 30em;
-}
-
 .headmovie{
 	width: 100%;
 	max-height: 50em;
 }
+
+.rowbg{
+	background-color: lightgrey;
+}
+
 
 /*COEN BRO*/
 

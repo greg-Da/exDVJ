@@ -21,8 +21,6 @@ Route::view('ethan', 'ethan')->name('ethan');
 
 Route::view('joel', 'joel')->name('joel');
 
-Route::get('users/', 'UserController@list')->name('user.list');
-
 Route::delete('users/{id}/','UserController@destroy')->name('user.destroy');
 
 Route::get('movies/', 'MovieController@list')->name('movie.list');
@@ -33,10 +31,10 @@ Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 
 Route::get('users/profile', 'UserController@profile')->name('users.profile');
 
-Route::post('comments', ['as' => 'comments', 'uses' => 'CommentController@store'])->name('comments.store');
+Route::post('comments', ['as' => 'movies', 'uses' => 'CommentController@store'])->name('comments.store');
 
 Auth::routes();
 
-Route::get('/admin', 'AdminController@admin')    
+Route::get('users/admin', 'AdminController@admin')    
     ->middleware('is_admin')    
     ->name('admin');

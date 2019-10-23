@@ -15,7 +15,7 @@ class UserController extends Controller
 		$user = User::findOrFail($id);
 		$user->delete();
 
-		return redirect()->route('user.list');
+		return redirect()->route('admin');
 	}
 
 	public function profile()
@@ -43,15 +43,7 @@ class UserController extends Controller
 		$users->type = User::DEFAULT_TYPE;
 		$users->save();
 
-		return redirect()->route('user.list');
+		return redirect()->route('/');
 	}    
-
-
-
-	public function list(){
-
-		$users = User::all();
-
-		return view(self::VIEW.'list', ['users' => $users]);
-	}    
+   
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Movie;
+use \App\Comment;
 
 class MovieController extends Controller
 {
@@ -15,14 +16,17 @@ class MovieController extends Controller
 		return view('movie.list', ['movies' => $movies]);
 	}  
 
-	public function show($movie)
+	public function show($param)
 	{
-		$movie = Movie::with('comments','comments.replies')->findOrFail($movie);
+		$movie = Movie::findOrFail($param);
 
 		$comments = $movie->comments();
+
+		dd($comments);
 
 		return view('movie.show', [
 			'movie' => $movie,
 			'comments' => $comments
-		]);	}
+		]);
 	}
+}

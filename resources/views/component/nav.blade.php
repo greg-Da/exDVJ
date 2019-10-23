@@ -6,9 +6,8 @@
     <li class="nav-item active">
       <a class="nav-link" href="{{Route('movie.list')}}">Movies</a>
     </li>
+
     <li class="nav-item" active>
-
-
       <div class="dropdown show">
         <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Coen Bros
@@ -38,7 +37,11 @@
         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
           Profile <span class="caret"></span>
         </a>
-
+        @if(Auth::user() -> type === 'admin')
+        <li class="nav-item active">
+          <a class="nav-link" href="{{Route('admin')}}">Admin</a>
+        </li>
+        @endif
 
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="users/profile">
