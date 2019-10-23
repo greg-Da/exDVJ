@@ -13,6 +13,8 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    //put comments in database
     public function store(Request $request)
     {
     	$request->validate([
@@ -27,11 +29,6 @@ class CommentController extends Controller
         return back();
     }
 
-    public function show(Request $request)
-    {
-        $comments = $request->input('movie');
-        return view('movie.show',['comments' => $comments]);
-
-    }
+    
 
 }

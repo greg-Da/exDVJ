@@ -9,6 +9,7 @@ use \App\Comment;
 class MovieController extends Controller
 {
 	
+	//get all movies
 	public function list(){
 
 		$movies = \App\Movie::all();
@@ -16,6 +17,7 @@ class MovieController extends Controller
 		return view('movie.list', ['movies' => $movies]);
 	}  
 
+	// show one movie and comments
 	public function show($param)
 	{
 		$movie = Movie::findOrFail($param);

@@ -33,6 +33,8 @@ class Comment extends Model
      *
      * @var array
      */
+
+    //get replies from comments
     public function replies()
     {
         return $this->hasMany('App\Comment', 'parent_id');
