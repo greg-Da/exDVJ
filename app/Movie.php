@@ -12,7 +12,7 @@ class Movie extends Model
 
 
 
-
+    // get comments from a movie
     public function comments()
     {
         return $this->hasMany('App\Comment','post_id')->whereNull('parent_id');

@@ -33,6 +33,8 @@ class Comment extends Model
      *
      * @var array
      */
+
+    //get replies from comments
     public function replies()
     {
         return $this->belongsTo(Comment::class, 'parent_id');

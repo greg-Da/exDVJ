@@ -12,29 +12,36 @@
 */
 
 
-
+//HOME
 Route::get('/', 'ArticleController@rand')->name('home');
 
-Route::view('signup', 'signup')->name('signup');
-
+//COEN BROTHER
 Route::view('ethan', 'ethan')->name('ethan');
 
 Route::view('joel', 'joel')->name('joel');
 
+
+//USERS
 Route::delete('users/{id}/','UserController@destroy')->name('user.destroy');
 
+Route::get('users/profile', 'UserController@profile')->name('users.profile');
+
+Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
+
+
+//MOVIES
 Route::get('movies/', 'MovieController@list')->name('movie.list');
 
 Route::get('movies/{movie}/', 'MovieController@show');
 
-Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 
-Route::get('users/profile', 'UserController@profile')->name('users.profile');
-
+//COMMENTS
 Route::post('comments', ['as' => 'movies', 'uses' => 'CommentController@store'])->name('comments.store');
 
+//AUTH
 Auth::routes();
 
+//ADMIN
 Route::get('users/admin', 'AdminController@admin')    
     ->middleware('is_admin')    
     ->name('admin');
