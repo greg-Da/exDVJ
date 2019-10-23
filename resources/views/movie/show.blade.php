@@ -14,8 +14,7 @@
                     </p>
                     <hr />
                     <h4>Display Comments</h4>
-  
-                    @include('component.commentsDisplay', ['comments' => $movie->comments, 'post_id' => $movie->id])
+                    @include('component.commentsDisplay', ['comments' => $comments, 'post_id' => $movie->id])
    
                     <hr />
                     <h4>Add comment</h4>
