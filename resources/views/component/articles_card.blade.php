@@ -7,7 +7,7 @@
 					<div class="card bg-light mt-5 cardarticle" style="max-width: 21rem;">
 						<div class="card-header">{{$article -> title}}</div>
 						<div class="card-body">
-							<p class="card-text">{{$article -> content}}</p>
+							<p class="card-text p">{{$article -> content}}</p>
 						</div>
 					</div>
 				</div>	

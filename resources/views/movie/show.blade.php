@@ -16,7 +16,7 @@
                     <h2 class="titlemovie">{{ $movie->title }}</h2>
                     <br>
                     <h3>Synopsis</h3>
-                    <p class="mb-4 movietext">
+                    <p class="mb-4 movietext p">
                         {{ $movie->story }}
                     </p>
                     <h3>Actors</h3>
