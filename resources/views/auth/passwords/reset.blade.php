@@ -1,3 +1,4 @@
+@section('title', 'Rest Password')
 @extends('layout')
 
 @section('content')

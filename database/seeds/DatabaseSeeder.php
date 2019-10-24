@@ -16,13 +16,7 @@ class DatabaseSeeder extends Seeder
     {
     	$faker = Faker\Factory::create('fr_FR');
     	//USER
-    	for ($i = 0; $i < 10; $i++) {
-    		$user = new User;
-    		$user->username = $faker->userName;
-    		$user->email = $faker->unique()->email;
-    		$user->password = bcrypt('123456');
-    		$user->save();
-    	}
+
 
     	//MOVIE
       $movie = new Movie;
@@ -170,12 +164,49 @@ class DatabaseSeeder extends Seeder
       $movie->save();
 
     	//ARTICLE
-      for ($i = 0; $i < 10; $i++) {
-          $article = new Article;
-          $article->title = $faker->word;
-          $article->content = $faker->realText($maxNbChars = 200);
-          $article->save();        
+      
+      $article = new Article;
+      $article->title = "The two headed director";
+      $article->content = "In their early days, the Coen brothers focused on working with four hands on the scripts, mentioning Joel to the director and Ethan to the production. Since 2003, the brothers appear more inseparable than ever. Despite the three years between them, Joel and Ethan Coen have similar lives: studies, careers, family life. Almost fusion, the Coen brothers even have fun calling themselves 'the director with two heads'";
+      $article->save();  
 
-      }
+      $article = new Article;
+      $article->title = "Too good for the others";
+      $article->content = "In 1991, the Coen brothers won everything at the Cannes Film Festival where they came to present Barton Fink. If it made a few teeth grind at the time, the leaders pounce on anyone who wants to hear it that it is not contrary to the regulations. In 1999, Bruno Dumont and his Humanity won the three prizes. Two years later it is The Pianist of Haneke who realizes the same feat... This year, the organizers took steps to prevent cumulative awards.";
+      $article->save();        
+
+      $article = new Article;
+      $article->title = "Tradition?";
+      $article->content = "Since their first film, the Coen brothers have collaborated with prestigious actors who trust them. By working for them, these actors embody atypical and counter-employed characters often distinguished during ceremonies and festivals. Nevertheless, they do not hesitate to work punctually with actors who reveal a completely different face by collaborating with the Coen brothers, this is the case of Oscar Isaac, Javier Bardem or Hailee Steinfeld.";
+      $article->save(); 
+
+      $article = new Article;
+      $article->title = "The moron trilogy";
+      $article->content = "What do O'Brother, Intolerable Cruelty and Burn After Reading have in common? Apart from the fact that they were all directed by the Coen brothers, these films are also led by George Clooney. And in each of them, the actor plays a silly character. So much so that Ethan Coen ended up calling these three feature films, informally, 'La trilogie des idiots' - even if Ave, César! , released in 2016, can also be part of this selection.";
+      $article->save(); 
+
+      $article = new Article;
+      $article->title = "Is it a movie?";
+      $article->content = "The Ballad of Buster Scruggs is a western divided into six chapters. Each part is interested in a legend of the Wild West. Initially, the directors were supposed to shoot a mini-series of anthology. They finally opted for the sketchy film format, which was shorter than originally intended. The feature film begins with a first story centered on Buster Scruggs, a friendly cowboy. Coincidence or wink: Ethan Coen’s son also bears the sweet name of Buster!
+";
+      $article->save();
+
+      $article = new Article;
+      $article->title = "Remember your line";
+      $article->content = "The Coen brothers have several caps and control their films from A to Z. They leave nothing to chance, nor to improvisation. As George Clooney said in Variety: I remember the shooting of the film O'Brother and you don’t improvise with them, because it’s like improvising with Shakespeare. They have a specific pattern in the construction and rhythm of their writing. They are great writers. They are incredibly imaginative directors and, most importantly, it’s very fun to work with them. Every time they call me, I just say 'Tell me where and I’ll be there'.";
+
+      $article = new Article;
+      $article->title = "Who is he?";
+      $article->content = "In 1997, Roderick Jaynes was named to the Oscars for his work on editing Fargo. Same thing in 2008 for No Country for Old Men. What we don’t really know at the time.... is that this person doesn’t exist! Jaynes is actually a pseudonym used by the two directors, who edit their own films. A little joke of the Coens, who had fun inventing a life for him, in which they paint the portrait of a 90-year-old man, not fit enough to come and get a possible trophy at the Oscars.";
+
+
+      $article = new Article;
+      $article->title = "Dear Stanley";
+      $article->content = "Ethan and Joel Coen do not hide it: they are very fan of Stanley Kubrick’s cinema. Some plans of their films are thus undetected tributes to the director’s filmography. Barton Fink can be cited as one of the long scenes in the hallway, a direct nod to Shining. We can also mention this replica popularized by Orange Mécanique 'The Old In and Out', which can be heard in the film Fargo.";
+
+
+      $article = new Article;
+      $article->title = "French Award";
+      $article->content = "Honorary decoration awarded by the French Ministry of Culture, the Commanders of Arts and Letters are talented personalities rewarded for their creativity and multiple works. In 2013, the Coen brothers were honoured to receive this award from the then Minister of Culture, Aurélie Filippetti. The directors were rewarded for their entire career, for their 'singular writing' and their 'attention to detail'.";
+    }
   }
-}

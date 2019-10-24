@@ -1,3 +1,4 @@
+@section('title', 'Register')
 @extends('layout')
 
 @section('content')

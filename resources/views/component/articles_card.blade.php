@@ -4,7 +4,7 @@
 			<div class="row">
 				@foreach ($articles as $article)
 				<div class="col">
-					<div class="card bg-light mt-5 cardarticle" style="max-width: 19rem;">
+					<div class="card bg-light mt-5 cardarticle" style="max-width: 21rem;">
 						<div class="card-header">{{$article -> title}}</div>
 						<div class="card-body">
 							<p class="card-text">{{$article -> content}}</p>

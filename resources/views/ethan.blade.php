@@ -1,4 +1,4 @@
-
+@section('title', 'Ethan Coen')
 @extends('layout')
 
 @section('content')

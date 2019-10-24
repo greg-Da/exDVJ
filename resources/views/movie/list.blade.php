@@ -1,3 +1,4 @@
+@section('title', 'Movies')
 @extends('layout')
 
 @section('content')
