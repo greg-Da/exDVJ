@@ -16,6 +16,13 @@ class DatabaseSeeder extends Seeder
     {
     	$faker = Faker\Factory::create('fr_FR');
     	//USER
+      $user = new User;
+      $user->username = 'userAdmin';
+      $user->email = 'a@a.fr';
+      $user->type = 'admin';
+      $user->password = bcrypt('12345678');
+      $user->save();
+
 
 
     	//MOVIE
