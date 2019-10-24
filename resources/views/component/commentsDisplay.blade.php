@@ -5,7 +5,7 @@
         <strong class="commentUser">{{ $comment->user->username }}</strong>
         <br><br>
         <p>{{ $comment->body }}</p>
-
+        @Auth
         <a href="" id="reply"></a>
         <form method="POST" action="{{ action('CommentController@store') }}">
             @csrf
@@ -18,6 +18,7 @@
                 <input type="submit" class="btn btn-warning" value="Reply" />
             </div>
         </form>
+        @endAuth
         @include('component.commentsDisplay', ['comments' => $comment->replies])
     </div>
 </div>

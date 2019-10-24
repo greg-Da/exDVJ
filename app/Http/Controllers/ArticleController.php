@@ -13,6 +13,7 @@ class ArticleController extends Controller
 		$articles = Article::all()->random(3);
 
 		$movie = Movie::all()->random(9);
+
 		return view('home', [
 			'articles' => $articles,
 			'movie' => $movie

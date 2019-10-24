@@ -8,16 +8,26 @@
             <div class="card">
                 <div class="card-body">
                     <img class="imgMovieShow" src="/assets/{{ $movie->avatar }}" />
-                    <br/><br><br>
+                    <br><br>
+                    <p class="mb-4 movieyear">
+                        {{ $movie->year }}
+                    </p>
+                    <br/>
                     <h2 class="titlemovie">{{ $movie->title }}</h2>
                     <br>
-                    <p class="mb-4">
+                    <h3>Synopsis</h3>
+                    <p class="mb-4 movietext">
                         {{ $movie->story }}
+                    </p>
+                    <h3>Actors</h3>
+                    <p class="mb-4 movietext">
+                        {{ $movie->actors }}
                     </p>
                     <hr class="mb-4" />
                     @include('component.commentsDisplay', ['comments' => $comments, 'post_id' => $movie->id])
    
                     <hr />
+                    @Auth
                     <h4>Add comment</h4>
                     <form method="POST" action="{{ action('CommentController@store') }}">
                         @csrf
@@ -27,6 +37,9 @@
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-success" value="Add Comment" />
+                            @else
+                            <h3>Register to comment</h3>
+                            @endAuth
                         </div>
                     </form>
                 </div>

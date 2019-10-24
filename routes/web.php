@@ -30,8 +30,7 @@ Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 //MOVIES
 Route::get('movies/', 'MovieController@list')->name('movie.list');
 
-Route::get('movies/{movie}/', 'MovieController@show');
-
+Route::get('movies/{movie}/', 'MovieController@show')->name('movie.show');
 
 //COMMENTS
 Route::post('comments', ['as' => 'movies', 'uses' => 'CommentController@store'])->name('comments.store');

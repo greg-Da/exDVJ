@@ -17,30 +17,25 @@
 			<div class="carousel-inner" role="listbox">
 
 				<!--First slide-->
-				@for ($i = 0; $i = 7 ; $i)
-
 				<div class="carousel-item active">
+
 					<div class="row">
-						@for ($j = 0; $j = 3 ; $j++)
-						@if (isset($movie[$i]))
-
+						@for ($i =0; $i <= 2; $i++)
 						<div class="col-md-4">
-							<div class="card mb-2">
-								<img class="card-img-top imgsld" src="assets/{{$movie[$i]->avatar}}"
-								alt="Card image cap">
-								<div class="card-body bg-dark">
-									<h4 class="card-title movies-slider">{{$movie[$i]->title}}</h4>
-									<p class="card-text movies-slider">{{$movie[$i]->year}}</p>
+							<a href="{{route('movie.show', $movie[$i]->id)}}">
+								<div class="card mb-2 carouselmovie">
+									<img class="card-img-top imgsld" src="assets/{{$movie[$i]->avatar}}"
+									alt="Card image cap">
+									<div class="card-body bg-dark">
+										<h5 class="card-title movies-slider">{{$movie[$i]->title}}</h5>
+										<p class="card-text movies-slider">{{$movie[$i]->year}}</p>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
-						{{ $i++ }}
-
-						@endif
 						@endfor
 					</div>
 				</div>
-				@endfor
 
 
 				<!--/.First slide-->
@@ -49,16 +44,18 @@
 				<div class="carousel-item">
 
 					<div class="row">
-						@for ($i =3; $i = 5; $i++)
+						@for ($i =3; $i <= 5; $i++)
 						<div class="col-md-4">
-							<div class="card mb-2">
-								<img class="card-img-top imgsld" src="assets/{{$movie[$i]->avatar}}"
-								alt="Card image cap">
-								<div class="card-body bg-dark">
-									<h4 class="card-title movies-slider">{{$movie[$i]->title}}</h4>
-									<p class="card-text movies-slider">{{$movie[$i]->year}}</p>
+							<a href="{{route('movie.show', $movie[$i]->id)}}">
+								<div class="card mb-2 carouselmovie">
+									<img class="card-img-top imgsld" src="assets/{{$movie[$i]->avatar}}"
+									alt="Card image cap">
+									<div class="card-body bg-dark">
+										<h5 class="card-title movies-slider">{{$movie[$i]->title}}</h5>
+										<p class="card-text movies-slider">{{$movie[$i]->year}}</p>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						@endfor
 					</div>
@@ -69,17 +66,20 @@
 				<div class="carousel-item">
 
 					<div class="row">
-
+						@for ($i =6; $i <= 8; $i++)
 						<div class="col-md-4">
-							<div class="card mb-2">
-								<img class="card-img-top imgsld" src="assets/{{$movie[$i]->avatar}}"
-								alt="Card image cap">
-								<div class="card-body bg-dark">
-									<h4 class="card-title movies-slider">{{$movie[$i]->title}}</h4>
-									<p class="card-text movies-slider">{{$movie[$i]->year}}</p>
+							<a href="{{route('movie.show', $movie[$i]->id)}}">
+								<div class="card mb-2 carouselmovie">
+									<img class="card-img-top imgsld" src="assets/{{$movie[$i]->avatar}}"
+									alt="Card image cap">
+									<div class="card-body bg-dark">
+										<h5 class="card-title movies-slider">{{$movie[$i]->title}}</h5>
+										<p class="card-text movies-slider">{{$movie[$i]->year}}</p>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
+						@endfor
 					</div>
 				</div>
 				<!--/.Third slide-->
