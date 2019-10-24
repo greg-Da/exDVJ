@@ -7,9 +7,9 @@
 <br><br>
 
 <div class="container">
-	<h2 class="textmovie">Joel Coen</h2>
+	<br><br>
 	<h3>Biography</h3>
-	<p>Working with his brother Ethan, screenwriter/director Joel Coen has built a reputation as one of the most visionary and idiosyncratic filmmakers of the late 20th century. Combining thoughtful eccentricity, wry humor, arch irony, and often brutal violence, the films of the Coen brothers have become synonymous with a style of filmmaking that pays tribute to classic American movie genres -- especially film noir -- while sustaining a firmly postmodern feel. Beginning with Blood Simple, their brutal, stylish 1984 debut, the brothers have amassed a body of work that has established them as two of the most compelling figures in American and world cinemas.</p>
+	<p  class="biography">Working with his brother Ethan, screenwriter/director Joel Coen has built a reputation as one of the most visionary and idiosyncratic filmmakers of the late 20th century. Combining thoughtful eccentricity, wry humor, arch irony, and often brutal violence, the films of the Coen brothers have become synonymous with a style of filmmaking that pays tribute to classic American movie genres -- especially film noir -- while sustaining a firmly postmodern feel. Beginning with Blood Simple, their brutal, stylish 1984 debut, the brothers have amassed a body of work that has established them as two of the most compelling figures in American and world cinemas.</p>
 
 	<p> Born in St. Louis Park, MN, in 1954, Joel Coen studied at New York University before moving into filmmaking in the early '80s. He and his younger brother began writing screenplays while Joel worked as an assistant editor on good friend Sam Raimi's 1983 film The Evil Dead. In 1984, they made their debut with Blood Simple. Both of them wrote and edited the film (using the name Roderick Jaynes for the latter duty), while Joel took the directing credit and Ethan billed himself as the producer. It earned considerable critical acclaim and established the brothers as fresh, original talent. Their next major effort (after Crimewave, a 1985 film they wrote that was directed by Raimi), 1987's Raising Arizona was a screwball comedy miles removed from the dark, violent content of their previous movie, and it won over critics and audiences alike. Their fan base growing, the Coens went on to make Miller's Crossing (1990), a stark gangster epic with a strong performance from John Turturro, whom the brothers also used to great effect in their next film, Barton Fink (1991). Fink earned Joel a Best Director award and a Golden Palm at the 1991 Cannes Film Festival, as well as the festival's Best Actor award for Turturro. A surreal, nightmarish movie revolving around a writer's creative block, it was a heavily stylized, atmospheric triumph that further established the Coens as visionary arbiters of the bizarre.</p>
 
@@ -24,6 +24,7 @@
 	<p>They followed their award-winning film with the jet-black comedy Burn After Reading, but in 2009 they released one of their most idiosyncratic movies, A Serious Man. That film earned the brothers another nomination for Best Screenplay from the Academy.</p> 
 
 	<p>Their remarkable run continued with 2010's remake of True Grit, a film that once again garnered Oscar nominations for directing, screenwriting, and Best Picture, in addition to acting nods in various categories</p>
-</div>
+</div>	
+<br>
 
 @endsection

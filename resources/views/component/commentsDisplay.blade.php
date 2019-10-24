@@ -1,7 +1,11 @@
 @foreach ($comments as $comment)
+<div class="container cardComment">
     <div class="display-comment" @if($comment->parent_id != null) style="margin-left:40px;" @endif>
-        <strong>{{ $comment->user->username }}</strong>
+        <br>
+        <strong class="commentUser">{{ $comment->user->username }}</strong>
+        <br><br>
         <p>{{ $comment->body }}</p>
+
         <a href="" id="reply"></a>
         <form method="POST" action="{{ action('CommentController@store') }}">
             @csrf
@@ -16,4 +20,6 @@
         </form>
         @include('component.commentsDisplay', ['comments' => $comment->replies])
     </div>
+</div>
+<br>
 @endforeach

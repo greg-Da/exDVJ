@@ -24,8 +24,6 @@ Route::view('joel', 'joel')->name('joel');
 //USERS
 Route::delete('users/{id}/','UserController@destroy')->name('user.destroy');
 
-Route::get('users/profile', 'UserController@profile')->name('users.profile');
-
 Route::post('signup', ['as' => 'signup', 'uses' => 'UserController@add']);
 
 

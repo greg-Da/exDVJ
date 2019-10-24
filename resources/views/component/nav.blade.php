@@ -33,20 +33,18 @@
       </li>
       @endif
       @else
-      <li class="nav-item dropdown">
-        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-          Profile <span class="caret"></span>
-        </a>
-        @if(Auth::user() -> type === 'admin')
+              @if(Auth::user() -> type === 'admin')
         <li class="nav-item active">
           <a class="nav-link" href="{{Route('admin')}}">Admin</a>
         </li>
         @endif
+      <li class="nav-item dropdown">
+        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+          {{Auth::user()->username}} <span class="caret"></span>
+        </a>
+
 
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="users/profile">
-            User Profile
-          </a>
           <a class="dropdown-item" href="{{ route('logout') }}"
           onclick="event.preventDefault();
           document.getElementById('logout-form').submit();">

@@ -26,6 +26,10 @@
 	width: 100%;
 }
 
+.imgsld{
+	height: 450px;
+}
+
 .movies-slider{
 	color: white;
 }
@@ -87,9 +91,53 @@
 	background-color: lightgrey;
 }
 
+.cardmovie{
+	margin: 2.3em 2.3em 1.5em 2.3em;
+}
+
+.imgmovie{
+	height: 400px;
+	padding: 2.5em;
+	padding-top: 3.9em;
+	border: 1.5px solid black;
+}
+
+.h1movie{
+	font-size: 3.5em;
+	text-align: center;
+	font-weight: bolder;
+	color: #343A40;
+}
+
+/*MOVIE SHOW*/
+
+.imgMovieShow{
+	padding-left: 14.6em;
+}
+
+.titlemovie{
+	text-align: center;
+}
+
+.commentUser{
+	text-decoration: underline;
+	font-weight: bolder;
+	font-size: 1.3em;
+}
+
+.cardComment{
+	padding: 1em;
+	border: 1px solid lightgrey;
+	background-color: rgba(211, 211, 211, 0.3);
+
+}
 
 /*COEN BRO*/
 
 .imgbro{
 	width: 100%;
+}
+
+.biography{
+	text-align: justify;
 }

@@ -18,9 +18,8 @@ class CreateMoviesTable extends Migration
             $table->string('title');
             $table->text('story');
             $table->string('actors');
-            $table->float('rate');
             $table->integer('year');
-            $table->string('avatar')->default('assets/ballad.jpg');
+            $table->string('avatar')->default('ballad.png');
             $table->timestamps();
         });
     }

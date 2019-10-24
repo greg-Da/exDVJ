@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Article;
+use \App\Movie;
 
 class ArticleController extends Controller
 {
@@ -11,6 +12,10 @@ class ArticleController extends Controller
 
 		$articles = Article::all()->random(3);
 
-		return view('home', ['articles' => $articles]);
+		$movie = Movie::all()->random(9);
+		return view('home', [
+			'articles' => $articles,
+			'movie' => $movie
+		]);
 	} 
 }

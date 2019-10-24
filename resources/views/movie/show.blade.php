@@ -7,13 +7,14 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <br/>
-                    <h2>{{ $movie->title }}</h2>
-                    <p>
-                        {{ $movie->body }}
+                    <img class="imgMovieShow" src="/assets/{{ $movie->avatar }}" />
+                    <br/><br><br>
+                    <h2 class="titlemovie">{{ $movie->title }}</h2>
+                    <br>
+                    <p class="mb-4">
+                        {{ $movie->story }}
                     </p>
-                    <hr />
-                    <h4>Display Comments</h4>
+                    <hr class="mb-4" />
                     @include('component.commentsDisplay', ['comments' => $comments, 'post_id' => $movie->id])
    
                     <hr />

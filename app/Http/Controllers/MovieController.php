@@ -23,7 +23,7 @@ class MovieController extends Controller
 		$movie = Movie::findOrFail($param);
 
 		$comments = $movie->comments;
-
+		
 		return view('movie.show', [
 			'movie' => $movie,
 			'comments' => $comments
